@@ -1,4 +1,5 @@
 
+import Banner from './pages/Banner'
 import NavBar from './pages/NavBar'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <Banner />
     </>
   )
 }
