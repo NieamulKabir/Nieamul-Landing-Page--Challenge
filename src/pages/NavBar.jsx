@@ -50,7 +50,7 @@ const NavBar = () => {
             </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
+          <a className="text-xl">
             <img
               className="w-[194px] h-[47px] ml-[90px] "
               src={logo}
