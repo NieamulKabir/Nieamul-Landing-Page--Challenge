@@ -6,7 +6,7 @@ import car from "../assets/car.png";
 
 const BuyProcess = () => {
   return (
-    <div className=" py-10 relative z-10 bottom-24 mb-[130px]">
+    <div className="relative pt-10 z-10 bottom-24">
       <div className="flex flex-col font-primary lg:flex-row p-2 gap-[15px] text-center items-center justify-center bottom-10 relative">
         {/* Step-1 */}
         <div className="flex flex-col items-center w-[189px] h-[236px]">
