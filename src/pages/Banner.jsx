@@ -3,6 +3,7 @@ import bgImage1 from "../assets/bgImage.png";
 import bgImage2 from "../assets/Image.png";
 import bgImage3 from "../assets/bgImage.png";
 import { FaCartShopping } from "react-icons/fa6";
+
 const Banner = () => {
   const bgImages = [bgImage1, bgImage2, bgImage3];
   const [currentBgImage, setCurrentBgImage] = useState(1);
@@ -17,7 +18,7 @@ const Banner = () => {
 
   return (
     <section
-      className="w-full min-h-screen lg:h-[918px]  bg-[#EAEAEA] mt-20"
+      className="w-full min-h-screen lg:h-[900px]  bg-[#EAEAEA] mt-20"
       style={{
         backgroundImage: `url(${bgImages[currentBgImage]})`,
         backgroundPosition: "center",
