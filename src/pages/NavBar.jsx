@@ -5,7 +5,7 @@ const NavBar = () => {
 
 
   return (
-    <div className="my-[30px]">
+    <div className=" fixed top-0 left-0 w-full z-50 bg-white ">
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -30,12 +30,24 @@ const NavBar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Item 1</a>
-              </li>
+              <a>Home</a>
+            </li>
 
-              <li>
-                <a>Item 3</a>
-              </li>
+            <li>
+              <a>About Us</a>
+            </li>
+            <li>
+              <a>Products</a>
+            </li>
+            <li>
+              <a>Features</a>
+            </li>
+            <li>
+              <a>Reviews</a>
+            </li>
+            <li>
+              <a>Contact Us</a>
+            </li>
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">
