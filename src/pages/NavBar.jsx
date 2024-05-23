@@ -1,8 +1,8 @@
 import logo from "../assets/logo.png";
 import { FaUser } from "react-icons/fa6";
-import { FaCartShopping } from "react-icons/fa6"
+import { FaCartShopping } from "react-icons/fa6";
 const NavBar = () => {
-
+  const cartItem = JSON.parse(localStorage.getItem("cartItem"));
 
   return (
     <div className=" fixed top-0 left-0 w-full z-50 bg-white ">
@@ -30,24 +30,24 @@ const NavBar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-              <a>Home</a>
-            </li>
+                <a>Home</a>
+              </li>
 
-            <li>
-              <a>About Us</a>
-            </li>
-            <li>
-              <a>Products</a>
-            </li>
-            <li>
-              <a>Features</a>
-            </li>
-            <li>
-              <a>Reviews</a>
-            </li>
-            <li>
-              <a>Contact Us</a>
-            </li>
+              <li>
+                <a>About Us</a>
+              </li>
+              <li>
+                <a>Products</a>
+              </li>
+              <li>
+                <a>Features</a>
+              </li>
+              <li>
+                <a>Reviews</a>
+              </li>
+              <li>
+                <a>Contact Us</a>
+              </li>
             </ul>
           </div>
           <a className=" text-xl">
@@ -82,8 +82,13 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end hidden md:flex mr-[90px] ">
-        <FaCartShopping className="h-[22px] w-[22px] mr-[20px]" />
-        <FaUser  className="h-[22px] w-[22px]"/>
+          <div className="relative cursor-pointer ">
+            <FaCartShopping className="h-[22px] w-[22px] mr-[20px]" />
+            <span className="absolute flex justify-center items-center mt-[-20px] h-5 w-5 font-semibold  right-[0px] top-0  rounded-full bg-[#FED29C]  text-black">
+              {cartItem ? cartItem.length : 0}
+            </span>
+          </div>
+          <FaUser className="h-[22px] w-[22px]" />
         </div>
       </div>
     </div>

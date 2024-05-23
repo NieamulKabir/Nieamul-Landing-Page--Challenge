@@ -5,7 +5,7 @@ import Vincent from "../assets/discountModel/Vincent.png";
 
 const DiscountItems = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-center mb-24 px-4 md:mb-32 lg:mb-48 mx-auto max-w-screen-xl ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-center mb-24 px-4 md:mb-32 lg:mb-[150px] mx-auto max-w-screen-xl ">
       <div className="flex justify-center items-center w-full relative lg:top-10 ">
         <img src={Bravo} alt="Bravo" className="w-full h-full object-cover" />
 
